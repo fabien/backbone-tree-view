@@ -34,7 +34,8 @@
             var data = [
                 {
                     id:7,
-                    title:'No children'
+                    title:'No children',
+                    checkbox: false
                 },
                 {
                     id:1,
@@ -116,7 +117,8 @@
             var list = new BackTree.Tree({
                 collection : data,
                 settings : {
-                    checkbox : true,
+                    checkbox : true, // can be: boolean, 'leaf', 'branch'
+                    cascade: true,
                     plugins : {
                         DnD: {
                             changeParent : false

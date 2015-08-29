@@ -7,7 +7,8 @@ class BackTree.Settings extends Backbone.Model
 		ItemConstructor : BackTree.Item
 		ListConstructor : BackTree.List
 		touch : true
-		checkbox : false
+		checkbox : false,
+		cascasde: true
 
 	makeItem : (options = {}) ->
 		_.extend options, {
