@@ -9,7 +9,7 @@ class BackTree.Item extends BackTree.View
 		@listenTo @model, 'childrenChanged', @onChildrenChanged
 		@listenTo @model, 'change:open', @onOpenChanged
 		@listenTo @model, 'change:checked', @onCheckedChanged
-		@listenTo @model, 'change:title', @render
+		@listenTo @model, 'change', @render
 
 		@$el.data 'view', @
 
